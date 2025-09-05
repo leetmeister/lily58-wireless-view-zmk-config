@@ -2,10 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: leetmeister
+      url-base: https://github.com/leetmeister
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
+    - name: nice-view-mod
+      remote: leetmeister
+      revision: main
   self:
     path: config
