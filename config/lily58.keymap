@@ -55,7 +55,7 @@
             // ------------------------------------------------------------------------------------------------------------
             // |  ESC  | F1  | F2  | F3   |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  | PRNT  |
             // |       | BKSP| HOME|  UP  | PGUP | NMLK |                   | KP * |  KP7  |  KP8  | KP9  | KP -  |KP CLR |
-            // |  CAPS | L2  | LEFT| DOWN |RIGHT | SCRLK|                   | KP / |  KP4  |  KP5  | KP6  | KP +  |KP,/CT |
+            // |CAPS/CT| L2  | LEFT| DOWN |RIGHT | SCRLK|                   | KP / |  KP4  |  KP5  | KP6  | KP +  |KP,/CT |
             // |       |KPENT| END |PAUSE | PGDN | INS  |  F11   |  |  F12  | KP0  |  KP1  |  KP2  | KP3  | KP.   |       |
             //                     |      |      |      |        |  |       |      |       |       |
 
@@ -63,7 +63,7 @@
             bindings = <
 &kp ESCAPE                 &kp F1         &kp F2          &kp F3           &kp F4         &kp F5                              &kp F6           &kp F7           &kp F8           &kp F9           &kp F10       &kp PRINTSCREEN
 &trans                     &kp BACKSPACE  &kp HOME        &kp UP           &kp PAGE_UP    &kp KP_NUMLOCK                      &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_CLEAR
-&kp CAPSLOCK               &mo 2          &kp LEFT_ARROW  &kp DOWN         &kp RIGHT      &kp SCROLLLOCK                      &kp KP_DIVIDE    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &mt RIGHT_CONTROL KP_COMMA
+&mt LCTRL CAPSLOCK         &mo 2          &kp LEFT_ARROW  &kp DOWN         &kp RIGHT      &kp SCROLLLOCK                      &kp KP_DIVIDE    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &mt RIGHT_CONTROL KP_COMMA
 &trans                     &kp KP_ENTER   &kp END         &kp PAUSE_BREAK  &kp PAGE_DOWN  &kp INS         &kp F11    &kp F12  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &trans
                                                           &trans           &trans         &trans          &trans     &trans   &trans           &trans           &trans
             >;
